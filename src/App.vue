@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Jakob's Page"/>
+    <HeaderBar navigationTitle="Jakob Andersson"/>
+    <body>
+      <p>This is in App</p>
+      <p>Lipsum lipsum etc.</p>
+    </body>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderBar from './components/HeaderBar.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderBar
   }
 }
 </script>
@@ -23,6 +26,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 </style>
