@@ -12,6 +12,7 @@
 
 <script>
 import HeaderBar from './components/HeaderBar.vue'
+import HeaderButton from './components/HeaderButton.vue'
 import FooterBar from './components/FooterBar.vue'
 
 export default {
