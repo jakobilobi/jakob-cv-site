@@ -1,19 +1,44 @@
 <template>
     <nav>
         <div id="headerbar">
-            <div class="headerItem" id="navTitle">{{ navigationTitle }}</div>
+            <div class="headerItem" id="navTitle">{{ navTitle }}</div>
             <!-- replace thse with link component -->
-            <div class="headerItem" id="first">First link</div>
-            <div class="headerItem" id="second">Second link</div>
+            <header-button class="hdr-btn" v-for="btn in buttons" :key="btn.id" :text="btn.text" />
         </div>
     </nav>
 </template>
 
 <script>
+import HeaderButton from './HeaderButton.vue'
+
 export default {
     name: 'HeaderBar',
+    components: {
+        HeaderButton
+    },
     props: {
-        navigationTitle: String
+        navTitle: String
+    },
+    data() {
+        return {
+            buttons: [
+                {
+                    id: 0,
+                    text: 'First link',
+                    targetUrl: ''
+                },
+                {
+                    id: 1,
+                    text: 'Second link',
+                    targetUrl: ''
+                },
+                {
+                    id: 2,
+                    text: 'Third link',
+                    targetUrl: ''
+                }
+            ]
+        }
     }
 }
 </script>
@@ -33,8 +58,8 @@ export default {
     color: #42b983;
 }
 
-div.headerItem {
-    width: 39%;
+.hdr-btn {
+    width: 25%;
     vertical-align: top;
     display: inline-block;
     *display: inline;

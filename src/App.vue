@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderBar navigationTitle="Jakob Andersson"/>
+    <HeaderBar navTitle="Jakob Andersson"/>
     <body>
       <!-- replace with component -->
       <p>This is in App</p>
@@ -12,7 +12,6 @@
 
 <script>
 import HeaderBar from './components/HeaderBar.vue'
-import HeaderButton from './components/HeaderButton.vue'
 import FooterBar from './components/FooterBar.vue'
 
 export default {

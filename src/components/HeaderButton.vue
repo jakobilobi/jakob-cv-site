@@ -1,6 +1,6 @@
 <template>
     <div>
-        {{ buttonText }}
+        {{ text }}
     </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
     name: 'HeaderButton',
     props: {
-        buttonText: {
+        text: {
             type: String,
             required: true
         }
