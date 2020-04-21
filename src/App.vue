@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <HeaderBar navTitle="Jakob Andersson"/>
-    <body>
-      <!-- replace with component -->
-      <p>This is in App</p>
-      <p>Lipsum lipsum etc.</p>
-    </body>
+
+    <router-link :to="{ name: 'ViewStart' }">Start</router-link>
+    <router-link to="/me">About Me</router-link>
+    <router-view></router-view>
+
     <FooterBar />
   </div>
 </template>
