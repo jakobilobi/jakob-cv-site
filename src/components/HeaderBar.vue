@@ -3,7 +3,7 @@
         <div id="headerbar">
             <div class="headerItem" id="navTitle">{{ navTitle }}</div>
             <!-- replace thse with link component -->
-            <header-button class="hdr-btn" v-for="btn in buttons" :key="btn.id" :text="btn.text" />
+            <header-button class="hdr-btn" v-for="btn in buttons" :key="btn.id" :text="btn.text" :targetView="btn.targetView" />
         </div>
     </nav>
 </template>
@@ -24,18 +24,18 @@ export default {
             buttons: [
                 {
                     id: 0,
-                    text: 'First link',
-                    targetUrl: ''
+                    text: 'Start',
+                    targetView: 'ViewStart'
                 },
                 {
                     id: 1,
-                    text: 'Second link',
-                    targetUrl: ''
+                    text: 'About Me',
+                    targetView: 'ViewMe'
                 },
                 {
                     id: 2,
                     text: 'Third link',
-                    targetUrl: ''
+                    targetView: 'ViewNowhere'
                 }
             ]
         }
