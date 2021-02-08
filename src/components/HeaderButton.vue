@@ -8,11 +8,11 @@
 export default {
     name: 'HeaderButton',
     props: {
-        text: {
+        targetView: {
             type: String,
             required: true
         },
-        targetView: {
+        text: {
             type: String,
             required: true
         }
@@ -23,6 +23,6 @@ export default {
 <style scoped>
 div {
     color: white;
-    background-color: rgb(81, 160, 160);
+    background-color: lightsalmon;
 }
 </style>

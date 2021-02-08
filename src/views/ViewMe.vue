@@ -1,7 +1,7 @@
 <template>
-  <div id="start">
+  <div id="aboutMe">
     <body>
-      <!-- replace with start page content -->
+      <!-- replace with about me page content -->
       <p>This is the page about me!</p>
     </body>
   </div>
@@ -17,7 +17,7 @@ export default {
 
 /* temporary */
 body {
-  height: 400px;
+  height: 800px;
 }
 
 </style>

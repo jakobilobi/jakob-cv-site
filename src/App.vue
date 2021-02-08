@@ -2,8 +2,6 @@
   <div id="app">
     <HeaderBar navTitle="Jakob Andersson"/>
 
-    <router-link :to="{ name: 'ViewStart' }">Start</router-link>
-    <router-link to="/me">About Me</router-link>
     <router-view></router-view>
 
     <FooterBar />
@@ -32,11 +30,6 @@ export default {
   color: #2c3e50;
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
-/* temporary */
-body {
-  height: 400px;
 }
 
 </style>

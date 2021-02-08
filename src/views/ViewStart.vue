@@ -18,7 +18,7 @@ export default {
 
 /* temporary */
 body {
-  height: 400px;
+  height: 800px;
 }
 
 </style>
