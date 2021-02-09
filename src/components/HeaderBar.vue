@@ -1,7 +1,7 @@
 <template>
     <nav>
         <div id="headerbar">
-            <div class="headerItem" id="navTitle">{{ navTitle }}</div>
+            <router-link id="navTitle" to="/">{{ navTitle }}</router-link>
             <header-button class="hdr-btn" v-for="btn in buttons" :key="btn.id" :text="btn.text" :targetView="btn.targetView" />
         </div>
     </nav>
